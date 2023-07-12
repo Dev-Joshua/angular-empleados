@@ -73,12 +73,18 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div *ngFor="let empleado of empleados; let i = index">
-          {{ i + 1 }}: {{ empleado.nombre }} {{ empleado.apellido }}
-          {{ empleado.cargo }}
-          {{ empleado.salario }}
-        </div>
+        <app-empleado-hijo
+          *ngFor="let empleado of empleados; let i = index"
+          [empleado]="empleado"
+          [indice]="i"
+        ></app-empleado-hijo>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Este coomponente app es el padre.
+
+     Declaro las variables [empleado],[indice] que guardaran la informacion de las variables del *ngFor
+     y asi pueda ser utilizada esta informacion en el componente hijo.
+-->
