@@ -14,7 +14,6 @@
             placeholder="Nombre"
             class="form-control"
             [(ngModel)]="cuadroNombre"
-            #inputName
           />
         </div>
         <div class="form-group col-md-6">
@@ -26,7 +25,6 @@
             placeholder="Apellido"
             class="form-control"
             [(ngModel)]="cuadroApellido"
-            #inputName
           />
         </div>
         <div class="form-group col-md-6">
@@ -38,7 +36,6 @@
             placeholder="Cargo"
             class="form-control"
             [(ngModel)]="cuadroCargo"
-            #inputName
           />
         </div>
         <div class="form-group col-md-6">
@@ -50,7 +47,6 @@
             placeholder="Salario"
             class="form-control"
             [(ngModel)]="cuadroSalario"
-            #inputName
           />
         </div>
         <div class="col text-center d-grid gap-2 col-6 mx-auto">
@@ -59,7 +55,6 @@
             class="btn btn-dark"
             (click)="agregarEmpleado()"
             style="margin-top: 10px"
-            (click)="inputName.value = ''"
           >
             Añadir
           </button>
@@ -83,7 +78,7 @@
   </div>
 </section>
 
-<!-- Este coomponente app es el padre.
+<!-- Este componente app es el padre.
 
      Declaro las variables [empleado],[indice] que guardaran la informacion de las variables del *ngFor
      y asi pueda ser utilizada esta informacion en el componente hijo.

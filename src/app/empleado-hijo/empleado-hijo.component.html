@@ -1,6 +1,24 @@
+<!-- Componente hijo -->
 <div class="lista">
   {{ indice + 1 }}: {{ empleado.nombre }} {{ empleado.apellido }}
   {{ empleado.cargo }}
   {{ empleado.salario }}
 </div>
-<!-- Componente hijo -->
+
+<ul style="list-style: none">
+  <li *ngFor="let caracteristica of arrayCaracteristicas">
+    {{ caracteristica }}
+  </li>
+</ul>
+
+<app-empleado-caracteristicas
+  (ccEmpleados)="addCaracteristica($event)"
+></app-empleado-caracteristicas>
+
+<!-- Utilizo la directiva ngFor  para  iterar en el arrayCaracteristicaas del archivo .ts
+
+     El app-empleado-caracteristicas corresponde al componente nieto.
+     Desde este traemos las caracteristicas que se van a añadir con dar click por  medio  del @output (ccEmpleados).
+     Pasa la informacion del coomponente empleadoo-caracteristicas para que se refleje mnediante una lista <ul>
+     recorriendo un arrayCaracteristicas donde se inserta esa innformacion del componente hijo.
+-->

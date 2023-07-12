@@ -1,0 +1,12 @@
+<label for="item-input">Característica: </label>
+<input type="text" #newCaracteristica />
+<button
+  type="button"
+  (click)="addCaracteristicas(newCaracteristica.value)"
+  class="btn btn-dark"
+>
+  Añadir característica
+</button>
+
+<!-- Cuando se pulse el boton llama a la funcion addCaracteristicas, le pasa un parametro de tipo string
+  que lo recoje del input(casilla de texto)#newCaracteristica -->
