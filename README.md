@@ -18,6 +18,7 @@
 ## Overview
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+
 I create an interface which contains a form in which I can create an employee with their respective data from a model.
 
 Taking advantage of the tools that Angular gives me, I can communicate my components to reflect the employee's registered information that comes from the form and display it in a list using flex-box.
@@ -27,7 +28,7 @@ Taking advantage of the tools that Angular gives me, I can communicate my compon
 - CSS structure.
 - Using the @input & @Output decorator
 - Using directives
--
+
 
 ### Built With
 
