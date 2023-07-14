@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { ServiceEmpleadosService } from '../service-empleados.service';
 
 @Component({
   selector: 'app-empleado-caracteristicas',
@@ -8,7 +9,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class EmpleadoCaracteristicasComponent {
   @Output() ccEmpleados = new EventEmitter<string>();
 
+  constructor(private servicioEmp: ServiceEmpleadosService) {}
+
   addCaracteristicas(value: string) {
+    this.servicioEmp.mostrarMensaje(value);
     this.ccEmpleados.emit(value);
   }
 }

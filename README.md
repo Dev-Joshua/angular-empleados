@@ -1,27 +1,75 @@
-# AppEmpleados
+<!-- Please update value in the {}  -->
+
+<h1 align="start">Empleados App</h1>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How To Use](#how-to-use)
+- [Contact](#contact)
+
+<!-- OVERVIEW -->
+
+## Overview
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+I create an interface which contains a form in which I can create an employee with their respective data from a model.
 
-## Development server
+Taking advantage of the tools that Angular gives me, I can communicate my components to reflect the employee's registered information that comes from the form and display it in a list using flex-box.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Communication between components.
+- Using Bootstrap.
+- CSS structure.
+- Using the @input & @Output decorator
+- Using directives
+-
 
-## Code scaffolding
+### Built With
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-## Build
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The app is built from the following components:
 
-## Running end-to-end tests
+- empleado-caraacteristicas
+- empleado-hijo
+- empleado.model
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## How To Use
 
-## Further help
+<!-- This is an example, please update according to your application -->
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
+
+# Install dependencies
+$ npm install
+
+# Install Bootstrap
+$  npm i bootstrap jquery popper.js --save
+
+# Run the app with ng
+$ ng serve -o
+```
+
+## Contact
+
+- Website [Portafolio](https://dev-joshua.github.io/Portafolio/)
+- GitHub [@Dev-Joshua](https://github.com/Dev-Joshua)

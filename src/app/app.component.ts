@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Empleado } from './models/empleado.model';
+import { ServiceEmpleadosService } from './service-empleados.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Empleado } from './models/empleado.model';
 })
 export class AppComponent {
   title = 'Listado de Empleados';
+
+  constructor(private miServicio: ServiceEmpleadosService) {}
 
   empleados: Empleado[] = [
     new Empleado('Luis', 'Díaz', 'Diseñador', 900),
@@ -28,6 +31,9 @@ export class AppComponent {
       this.cuadroCargo,
       this.cuadroSalario
     );
+    this.miServicio.mostrarMensaje('Nombre del empleado: ' + miEmpleado.nombre);
     this.empleados.push(miEmpleado);
   }
 }
+
+// Inyecto el  servicio dentro de la classe AppCompnoent, a traves del constructor.
